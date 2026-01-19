@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="javafxapplication5.FXMLDocumentController"
+          hgap="8" vgap="8" alignment="center">
+
+    <TextField fx:id="display" editable="false" GridPane.columnSpan="5" prefHeight="45"/>
+
+    <!-- Scientific row 1: trig + shift + roots -->
+    <Button fx:id="sinBtn" text="sin" onAction="#handleSin" GridPane.rowIndex="1"/>
+    <Button fx:id="cosBtn" text="cos" onAction="#handleCos" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Button fx:id="tanBtn" text="tan" onAction="#handleTan" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+    <Button text="SHIFT" onAction="#handleShift" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+    <Button text="√x" onAction="#handleSqrt" GridPane.rowIndex="1" GridPane.columnIndex="4"/>
+
+    <!-- Scientific row 2: power/log/constants -->
+    <Button text="x²" onAction="#handleSquare" GridPane.rowIndex="2"/>
+    <Button text="xʸ" onAction="#handlePower" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Button text="log" onAction="#handleLog" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+    <Button text="ln" onAction="#handleLn" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+    <Button text="π" onAction="#handlePi" GridPane.rowIndex="2" GridPane.columnIndex="4"/>
+
+    <!-- Numbers & operators -->
+    <Button text="7" onAction="#handleNumber" GridPane.rowIndex="3"/>
+    <Button text="8" onAction="#handleNumber" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <Button text="9" onAction="#handleNumber" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+    <Button text="/" onAction="#handleOperator" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+
+    <Button text="4" onAction="#handleNumber" GridPane.rowIndex="4"/>
+    <Button text="5" onAction="#handleNumber" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+    <Button text="6" onAction="#handleNumber" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+    <Button text="*" onAction="#handleOperator" GridPane.rowIndex="4" GridPane.columnIndex="3"/>
+
+    <Button text="1" onAction="#handleNumber" GridPane.rowIndex="5"/>
+    <Button text="2" onAction="#handleNumber" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+    <Button text="3" onAction="#handleNumber" GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+    <Button text="-" onAction="#handleOperator" GridPane.rowIndex="5" GridPane.columnIndex="3"/>
+
+    <Button text="0" onAction="#handleNumber" GridPane.rowIndex="6"/>
+    <Button text="." onAction="#handleNumber" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+    <Button text="=" onAction="#handleEquals" GridPane.rowIndex="6" GridPane.columnIndex="2"/>
+    <Button text="+" onAction="#handleOperator" GridPane.rowIndex="6" GridPane.columnIndex="3"/>
+
+   
+    <Button text="C" onAction="#handleClear" GridPane.rowIndex="3" GridPane.columnIndex="4"/>
+    
+</GridPane>
